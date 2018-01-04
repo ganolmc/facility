@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>FACILITY TEST</title>
+</head>
+<body>
+	<div class="container">
+		<header class="row header">
+			<div class="header__logo-wrapper">
+				<a href="#">
+					<img class="header__logo" src="img/logo.svg" alt="">
+					<span class="header__text">Facility Test</span>
+				</a>
+			</div>
+			<nav class="header__nav navbar navbar-expand-lg navbar-light bg-light">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link header__nav-link scroll" href="#full-slider">full slider</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link header__nav-link scroll" href="#mini-slider">mini slider</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link header__nav-link scroll" href="#columns">columns</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link header__nav-link scroll" href="#article">article</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link header__nav-link scroll" href="#map">map</a>
+						</li>
+			   	 	</ul>
+				</div>
+			</nav>			
+		</header>
+		<section class="slider" id="full-slider">
+			<div id="carousel-fade" class="carousel carousel-fade" data-ride="carousel" data-interval="3000">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-fade" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-fade" data-slide-to="1"></li>
+					<li data-target="#carousel-fade" data-slide-to="2"></li>
+				</ol>
+
+				<div class="carousel-inner embed-responsive embed-responsive-16by9" role="listbox">
+					<div class="carousel-item embed-responsive-item active">
+						<img src="img/slider.jpg" alt="First slide image" class="img-fluid">
+						<div class="carousel-caption">
+							<h1 class="slider__heading">First slide</h3>
+							<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at consectetur cumque dignissimos, dolorem doloremque dolores eaque incidunt itaque libero maiores, minima minus necessitatibus nesciunt nostrum pariatur, quidem vero vitae.</p>
+							<button type="button" class="slider__popup">POPUP</button>
+
+						</div>
+					</div>
+
+					<div class="carousel-item embed-responsive-item">
+						<img src="img/slider2.jpg" alt="Second slide image" class="img-fluid">
+						<div class="carousel-caption">
+							<h1 class="slider__heading">Second slide</h3>
+							<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at consectetur cumque dignissimos, dolorem doloremque dolores eaque incidunt itaque libero maiores, minima minus necessitatibus nesciunt nostrum pariatur, quidem vero vitae.</p>
+							<button class="slider__popup">POPUP</button>
+						</div>
+					</div>
+
+					<div class="carousel-item embed-responsive-item">
+						<img src="img/slider3.jpg" alt="Third slide image" class="img-fluid">
+				        <div class="carousel-caption">
+							<h1 class="slider__heading">Third slide</h3>
+							<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at consectetur cumque dignissimos, dolorem doloremque dolores eaque incidunt itaque libero maiores, minima minus necessitatibus nesciunt nostrum pariatur, quidem vero vitae.</p>
+							<button class="slider__popup">Popup</button>
+						</div>
+					</div>
+				</div>
+
+				<a class="carousel-control-prev" href="#carousel-fade" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-fade" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>	
+		</section>
+		
+		<section class="mini-slider" id="mini-slider">
+			<h2>Mini slider</h2>
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
+				<div class="inner carousel-inner row mx-auto" role="listbox">
+ 					<div class="carousel-item col-md-4 active">
+						<img class="img-fluid mx-auto d-block mini-slider__img" src="img/slider.jpg" alt="slide 1">
+					</div>
+					<div class="carousel-item col-md-4">
+						<img class="img-fluid mx-auto d-block mini-slider__img" src="img/slider2.jpg" alt="slide 2">
+					</div>
+					<div class="carousel-item col-md-4">
+						<img class="img-fluid mx-auto d-block mini-slider__img" src="img/slider3.jpg" alt="slide 3">
+					</div>
+					<div class="carousel-item col-md-4">
+						<img class="img-fluid mx-auto d-block mini-slider__img" src="img/slider.jpg" alt="slide 4">
+					</div>
+					<div class="carousel-item col-md-4">
+						<img class="img-fluid mx-auto d-block mini-slider__img" src="img/slider2.jpg" alt="slide 5">
+					</div>
+					<div class="carousel-item col-md-4">
+						<img class="img-fluid mx-auto d-block mini-slider__img" src="img/slider3.jpg" alt="slide 6">
+					</div>
+					<div class="carousel-item col-md-4">
+						<img class="img-fluid mx-auto d-block mini-slider__img" src="img/slider.jpg" alt="slide 7">
+					</div>
+					<div class="carousel-item col-md-4">
+						<img class="img-fluid mx-auto d-block mini-slider__img" src="img/slider2.jpg" alt="slide 7">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>		
+		</section>
+		<section class="columns" id="columns">
+			<h2>Columns</h2>
+			<div class="columns__wrapper row">	
+				<div class="columns__text-block">
+					<h3>Title lorem ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur harum id placeat velit. Commodi distinctio doloribus dolorum eveniet iure modi obcaecati </p>
+				</div>
+				<div class="columns__text-block">
+					<h3>Title lorem ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur harum id placeat velit. Commodi distinctio doloribus dolorum eveniet iure modi obcaecati optio perferendis sed voluptatem. Aut, consectetur, ullam? Saepe.</p>
+				</div>
+				<div class="columns__text-block">
+					<h3>Title lorem ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur harum id placeat velit. Commodi distinctio doloribus dolorum eveniet iure modi obcaecati optio perferendis sed voluptatem. </p>
+				</div>
+				<div class="columns__text-block">
+					<h3>Title lorem ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur harum id placeat velit. Commodi distinctio doloribus dolorum eveniet iure modi obcaecati optio perferendis sed voluptatem. Aut, consectetur, ullam? Saepe.</p>
+				</div>
+				<div class="columns__text-block">
+					<h3>Title lorem ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur harum id placeat velit.</p>
+				</div>
+				<div class="columns__text-block">
+					<h3>Title lorem ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur harum id placeat velit. Commodi distinctio doloribus dolorum eveniet iure modi obcaecati optio perferendis sed voluptatem. Aut, consectetur, ullam? Saepe.</p>
+				</div>
+			</div>
+		</section>
+		<section class="article" id="article">
+			<h2>Article</h2>
+			<div class="article__wrapper">
+				<h3 class="article__heading">title h3</h3>
+				<p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolore ea eaque explicabo natus nihil porro ullam.
+	Aliquid debitis deserunt dolore ducimus earum eligendi et ex exercitationem expedita facilis fugit illo laborum nesciunt odio officia omnis perferendis possimus quod recusandae, repudiandae, sequi similique velit. <strong>Amet aspernatur</strong> dolorem esse, exercitationem explicabo, harum ipsum laborum laudantium minus modi nisi repellendus tempora voluptate? Ab placeat, reprehenderit! Ab aliquid aspernatur, consequatur deserunt distinctio doloribus eos, explicabo illo, molestiae <a class="article__text-link" href='#'>mollitia natus nobis</a> perspiciatis quaerat quo sint tempore ullam vitae.</p>
+				<h3 class="article__heading">title h3</h3>
+				<p class="article__text">Aliquam asperiores, <em>blanditiis earum ipsam maxime</em> nobis odio optio recusandae repellendus reprehenderit rerum saepe sapiente similique, totam voluptas! Autem dolores omnis quas sed! Aut beatae consequatur dicta est illum incidunt obcaecati officiis placeat, quidem, sapiente ullam voluptatum. Id, impedit nesciunt? 
+	Atque cum cumque, dolores ducimus ea et expedita id illo incidunt, iusto nam non nostrum omnis perspiciatis quisquam repellat reprehenderit saepe sequi sint tempore ullam velit.</p>
+			</div>
+		</section>
+		<section class="map">
+			<div id="map"></div>
+				<script>
+				    function initMap() {
+				    	var uluru = {lat: 50.45, lng: 30.523333};
+				        var map = new google.maps.Map(document.getElementById('map'), {
+				          zoom: 4,
+				          center: uluru
+				        });
+				        var marker = new google.maps.Marker({
+				          position: uluru,
+				          map: map
+				        });
+				      }
+				</script>
+				<script async defer
+				    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE_TOuHN7hMdGJmgXddjM3HCWU_g4MJ8o&callback=initMap">
+				</script>
+			</div>
+		</section>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
